@@ -1,0 +1,16 @@
+COP4530 - Assignment 3: 
+Big-O analysis:
+
+reverse() complexity analysis:
+
+The reverse() function iterates through each node in the list once to reverse the order of the elements.
+In the worst case, the function needs to traverse all N nodes in the list.
+Therefore, the time complexity of reverse() is O(N), where N is the number of nodes in the list.
+
+
+remove_if(PREDICATE pred) complexity analysis:
+
+The remove_if() function iterates through each node in the list once to check the predicate condition and remove the corresponding nodes.
+In the worst case, the function needs to traverse all N nodes in the list.
+For each node, the function evaluates the predicate condition, which has its own time complexity. Let's denote the time complexity of the predicate as O(P).
+Therefore, the overall time complexity of remove_if() is O(N * P), where N is the number of nodes in the list and P is the time complexity of the predicate condition.
