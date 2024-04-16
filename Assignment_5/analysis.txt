@@ -1,0 +1,18 @@
+Analysis of the worst-case time complexity for the makeEmpty function:
+
+The makeEmpty function is responsible for deleting all nodes in the subtree pointed to by the given BinaryNode pointer.
+It is a recursive function that traverses the tree in a depth-first manner to deallocate memory for each node.
+In the worst-case scenario, the function needs to traverse all the nodes in the subtree to delete them.
+The time complexity of the makeEmpty function depends on the number of nodes in the subtree.
+Let's denote N as the number of nodes in the subtree.
+In the worst case, each node needs to be visited and deleted.
+Therefore, the time complexity of makeEmpty is O(N).
+The function visits each node once and performs constant time operations to delete the node.
+The recursion continues until all nodes in the subtree are visited and deleted.
+Thus, the time complexity is directly proportional to the number of nodes in the subtree.
+It's important to note that the time complexity may vary based on the structure of the tree.
+If the tree is well-balanced, the number of nodes in each subtree will be roughly equal, resulting in a more balanced recursive process. However, in the worst-case scenario where the tree is highly unbalanced (e.g., skewed), the time complexity of makeEmpty would be O(N), where N is the number of nodes in the subtree.
+
+To summarize:
+
+Worst-case time complexity of makeEmpty: O(N), where N is the number of nodes in the subtree.
