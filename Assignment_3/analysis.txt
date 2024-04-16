@@ -1,0 +1,15 @@
+Time complexity of clear() in Stack:
+The time complexity of clear() in Stack depends on the underlying adaptee class used for storage.
+Assuming the underlying adaptee class is a standard C++ STL container, such as std::vector or std::list, the time complexity of clear() is O(n),
+where n is the number of elements in the container.
+
+Explanation:
+Clearing a STL container involves deallocating memory used by the container and resetting its internal state.
+To achieve this, the container's clear() function typically traverses all the elements in the container and calls their destructors,
+resulting in a linear time complexity proportional to the number of elements in the container.
+
+In the case of Stack, the clear() function would call the clear() function of the underlying adaptee class,
+which, in turn, would traverse the elements and deallocate memory accordingly. Therefore, the time complexity of clear() in Stack is O(n).
+
+Please note that if a different adaptee class or custom container implementation is used, the time complexity of clear() could vary.
+However, assuming the use of standard C++ STL containers, the analysis provided holds true.
